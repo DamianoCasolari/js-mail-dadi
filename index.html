@@ -22,17 +22,48 @@
 
 <body>
     <section class="container-xl m-auto my-4">
+        <h1>Email checking exercise</h1>
         <form>
             <label class="form-label" for="check_email">Inserisci la tua email</label>
-            <input type="email" class="form-control" name="name_email" id="check_email" placeholder="mariorossi@gmail.com">
+            <input type="email" class="form-control" name="name_email" id="check_email"
+                placeholder="mariorossi@gmail.com">
             <div id="emailHelp" class="form-text">Verifica che l'email sia registrata corettamente</div>
-            <button type="submit" class="btn btn-primary my-3">Submit</button>
+            <button type="submit" class="btn btn-primary my-3">Check</button>
         </form>
 
         <div class="result"></div>
-           
-      
     </section>
+    <section class="px-3">
+        <div class="card container-xl my-5 m-auto py-3">
+        <div>
+            <h1 class="text-center">Dice game exercise</h1>
+        </div>
+        <div class="card-body"></div>
+        <button type="button" class="roll_the_dice w-25 m-auto btn btn-warning my-3">Roll the dice</button>
+
+    </div>
+    </section>
+    <section class="d-flex justify-content-around">
+        <div class="card">
+            <div class="card-header"> 
+                YOU
+            </div>
+            <div class="card-body result_player"> 
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header result_computer"> 
+                COMPUTER
+            </div>
+
+        </div>
+        
+    </section>
+
+    <div class="card text-center m-5 display-1">Result</div>
+
+
     <script src="./assets/js/main.js"></script>
 </body>
 
