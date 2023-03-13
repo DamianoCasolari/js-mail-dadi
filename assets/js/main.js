@@ -11,20 +11,22 @@ const emailList = [
     "a-team@gmail.com"
 ];
 
-let inputEl = document.querySelector(".form-control").value;
+
 const btnEl = document.querySelector(".btn");
+let inputEl;
+let resultEl = document.querySelector(".result");
 
-btnEl.addEventListener("click", function(e){
+btnEl.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(inputEl)
-for (let i = 0; i < emailList.length; i++) {
+    let inputEl = document.querySelector(".form-control").value;
+    for (let i = 0; i < emailList.length; i++) {
 
-    if (emailList[i] == inputEl) {
-      
-        console.log("si")
+        if (emailList.includes(inputEl)) {
+            resultEl.innerText = "L'email risulta registrata correttamente";
 
-    } else { 
-        console.log("no")
+
+        } else {
+            resultEl.innerText = "L'email NON risulta registrata correttamente";
+        }
     }
-}
-} );
+});
