@@ -31,4 +31,14 @@ btnEl.addEventListener("click", function (e) {
     }
 });
 
+const resultPlayerEl = document.querySelector(".result_player");
+const resultComputerEl = document.querySelector(".result_computer")
+const rollDiceEl = document.querySelector(".roll_the_dice")
 
+
+rollDiceEl.addEventListener("click", function() {
+    let playerScore = Math.ceil(Math.random() * 6)
+    resultPlayerEl.innerText = playerScore;
+    let computerScore = Math.ceil(Math.random() * 6)
+    resultComputerEl.innerText = computerScore;
+})
